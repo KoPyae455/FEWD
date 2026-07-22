@@ -1,0 +1,73 @@
+/*
+selector{
+property : value;
+}
+*/
+
+
+p#red {
+    color: red;
+}
+
+p#blue {
+    color: blue;
+}
+
+p#yellow {
+    color: yellow;
+}
+p#violet {
+    background-color: #FF00FF;
+}
+
+p#green {
+    background-color: #00FF00; 
+}
+
+p#orange {
+    background-color: #FF9900; 
+}
+/* Tertiary Color */
+
+p#yg{
+    background-color: #99FF00;
+}
+p#bg{
+    background-color: #00FF88;
+}
+p#bv{
+    background-color: #9900FF;
+}
+p#rv{
+    background-color: #FF00FF;
+}
+p#ro{
+    background-color: #FF3300;
+}
+p#yo{
+    background-color: #FFFF00;
+
+}
+
+/* element name selector */
+p {
+    font-family: cursive;
+}
+span {
+    font-family: sans-serif;
+    background-color: #FFFF00;
+}
+
+/* group selector */
+h1, h2 {
+    font-style: italic;
+}
+
+#red, #violet, #yg {
+    font-weight: bold;
+}
+/* class selector */
+.heading {
+    color: #333;
+    text-decoration: underline;
+}

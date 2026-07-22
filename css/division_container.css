@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+table>caption{
+    background-color: rgb(203, 215, 38);
+
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    border:2px solid darkblue;
+    padding: 10px;
+}
+
+
+figure{
+    background-color: rgb(203, 215, 38);
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+div{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(28, 0, 154);
+}
+figure>img{
+    padding: 15px 0px 15px;
+}
+/* child selector (only for direct child */
+p>span{
+    color: red;
+    /* font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace; */
+
+    font: bold 30px cursive;  /* font shorthand property */
+}
+/* descendant selector */
+table tr td span{
+    font: bold 20px cursive;
+    color: darkmagenta;
+}

@@ -1,0 +1,17 @@
+#monkeyLink:link {
+  color: brown;
+  text-decoration: none;
+}
+#monkeyLink:visited {
+  color: yellow;
+  text-decoration: none;
+}
+#monkeyLink:active {
+  color: red;
+  text-decoration: none;
+  font: bold 2rem cursive;
+}
+#monkeyLink:hover {
+  color: green;
+  text-decoration: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog D. Dog</title>
+    <link rel="stylesheet" href="../css/form_table.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Dog D. Dog</h1>
+
+        <div class="photo-div">
+            <img src="dog_lab.jpg" alt="Dog in Lab">
+        </div>
+
+        <div class="content-div">
+            
+            <h2 class="header-bar">About</h2>
+            <p>woof woof!<br>Hi, I'm dog.I love <span>User Interface Design</span></p>
+
+            <h2 class="header-bar">Courses</h2>
+            <p>Here are some courses I've taken:</p>
+            
+            <table>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Title</th>
+                    <th>Semester Taken</th>
+                </tr>
+                <tr>
+                    <td colspan="3" class="center-text">For Credit</td>
+                </tr>
+                <tr>
+                    <td>6.813</td>
+                    <td><a href="#">User Interface Design</a></td>
+                    <td>Spring 2014</td>
+                </tr>
+                <tr>
+                    <td>6.034</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td>6.006</td>
+                    <td><a href="#">Introduction to Algorithms</a></td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="center-text">Listener</td>
+                </tr>
+                <tr>
+                    <td>6.867</td>
+                    <td>Machine Learning</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td>6.830</td>
+                    <td>Database Systems</td>
+                    <td>Fall 2012</td>
+                </tr>
+            </table>
+
+            <h2 class="header-bar">Interests</h2>
+            <p>I am interested <strong><a href="#">HCI</a></strong> ,<a href="#">memes</a>, and <a href="#">youtube videos</a>.</p>
+
+            <h2 class="header-bar">Submit Pet Information</h2>
+            <p>Would love to know what kinds of pets you 'own'(you'll never own me).Submit below!</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label class="form-label">Name:</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Phone:</label>
+                    <input type="text">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Gender:</label>
+                    <input type="radio" name="gender" id="male" checked> <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+                </div>
+                
+                <div class="submit-div">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

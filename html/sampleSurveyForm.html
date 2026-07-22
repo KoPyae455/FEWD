@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <form action="./nested_table.html" method="post">
+        <fieldset>
+            <legend>Survey Form</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nameInput">Enter Your Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nameInput" name="name" placeholder="Name Here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="genderChoose">Choose Your Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="M" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" value="F" id="female"><label for="female">Female</label>
+                        <input type="radio" name="gender" value="O" id="others" checked><label
+                            for="others">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hobbyChoose">Choose Your Hobbies</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="reading" id="reading"><label
+                            for="reading">Reading</label>
+                        <input type="checkbox" name="hobby" value="music" id="music"><label for="music">Music</label>
+                        <input type="checkbox" name="hobby" value="running" id="running"><label
+                            for="running">Running</label>
+                        <input type="checkbox" name="hobby" value="dancing" id="dancing"><label
+                            for="dancing">Dancing</label>
+                        <input type="checkbox" name="hobby" value="other" id="other" checked><label for="other">Other
+                            Hobbies</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dobInput">Your Date of Birth</label>
+                    </td>
+                    <td>
+                        <input type="date" id="dobInput" name="dob">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ageInput">Enter Your Age</label>
+                    </td>
+                    <td>
+                        <input type="number" id="ageInput" name="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="emailInput">Enter Your Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="emailInput" name="email" placeholder="example@mail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ratingChoose">Choose Rating</label>
+                    </td>
+                    <td>
+                        <select id="ratingChoose" name="rating">
+                            <option value="">Choose Rating</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Good</option>
+                            <option value="3">Average</option>
+                            <option value="2">Poor</option>
+                            <option value="1">Very Poor</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="suggestionInput">Enter Your Suggestion</label>
+                    </td>
+                    <td>
+                        <textarea id="suggestionInput" name="suggestion" rows="4" cols="50"
+                            placeholder="Suggestion Here"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Finish">
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <a href="./sampleSurveyForm.html" target="_self">Go Back</a>
+            </p>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

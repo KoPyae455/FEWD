@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 2px solid darkgoldenrod;
+    padding: 5px; /* top+right+bottom+left = 5px */
+    
+}
+
+figure{
+    background-color: darkolivegreen;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+dt{
+    background-color: darkblue;
+    font: bold 2rem cursive ;
+    color: white;
+    padding: 0.3rem;
+    position: sticky;
+    top: 5rem;/* distance from browser's border */
+    /* margin-top: 5rem; distance from previous element's border */
+}
+dd{
+    margin: 1rem 0rem;
+    font-size: 1.5rem;
+}
+
+/* id selector */
+#first_container{
+    background-color: rgb(142, 126, 12);
+    width: 50%;
+    margin: 5px;
+    position: fixed;
+    top: 5rem;
+    left: 25%;
+}
+#second_container{
+    background-color: darksalmon;
+    width: 70%;
+    padding: 10px 0px 10px;
+    position: relative;/* based on previous element */
+    top: 7rem;
+    left: 10%;
+}
+#absoluteFig{
+    background-color: darkolivegreen;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 40rem;
+    left: 70%;
+}
+
+#absoluteFig>figcaption{
+    color: white;
+    font: bold 2rem cursive;
+    position: absolute;
+    top: 7rem;/* distance from parent elements border */
+    left: 3rem;/* distance from parent element's border */
+    opacity: 0%;
+}
+
+/* child selector (only for the direct child) */
+figure>img{
+    padding: 15px; /*top left+right bottom */
+    width: 300px;
+}
+table>caption{
+    background-color: darkkhaki;
+}
+
+p>span{
+    /* font-weight: bold;
+    font-family: cursive;
+    font-size: 25px;
+    color: red; */
+
+    font: bold 25px cursive; /* shorthand property for font */
+    color: red;
+}
+
+/* descentdant selector (all child contaent: child, grandchild,etc...) */
+table tr td span{
+    font: bold 25px cursive; /* shorthand property for font */
+    color: rgb(123, 0, 255);
+}
+
+/* pseudo class selector */
+#absoluteFig:hover figcaption:hover{
+    opacity: 100%;
+}

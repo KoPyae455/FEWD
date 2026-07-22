@@ -1,0 +1,81 @@
+/* အခြေခံ စာလုံးစတိုင်လ် နှင့် Margin Left (မင်းမှတ်စုအရ) */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* Position အတွက် ပင်မ Container (Relative) */
+.container {
+    position: relative; 
+}
+
+/* ညာဘက်ကို ပို့မယ့် Photo Div (Absolute) */
+.photo-div {
+    position: absolute;
+    top: 50px;    /* အပေါ်ကနေ နေရာချခြင်း */
+    right: 10px;  /* ညာဘက်အစွန်းကို ကပ်ခြင်း */
+    z-index: 10;  /* ခေါင်းစဉ်ဘားတွေရဲ့ အပေါ်ကနေ ပေါ်နေအောင် */
+}
+
+.photo-div img {
+    width: 200px; /* ပုံအရွယ်အစား (လိုအပ်သလို ပြင်ပါ) */
+    border: 1px solid #ccc; /* ပုံကို ဘောင်လေး အနည်းငယ်ခတ်ထားတယ် */
+}
+
+/* ညာဘက်မှာ ပုံအတွက် နေရာချန်ထားရန် */
+.content-div {
+    width: 75%; 
+}
+
+/* အပြာရောင် ခေါင်းစဉ်ဘားများ */
+.header-bar {
+    background-color: #8fa5d6; /* ပုံထဲက အပြာနုရောင် */
+    color: #000080; /* အပြာရင့်ရောင် စာသား */
+    font-size: 20px;
+    padding: 2px 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* လင့်ခ်များ (a tag) စတိုင်လ် */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* ဇယား (Table) စတိုင်လ် */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2px 5px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Form အပိုင်း Margin & Alignment (Label များကို ညီနေအောင်) */
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-label {
+    display: inline-block;
+    width: 55px; /* Name နဲ့ Phone ကို မျဉ်းညီအောင် နေရာယူထားခြင်း */
+}
+
+/* Submit ခလုတ်ကို Margin Left သုံးပြီး ညာဘက်ကို အနည်းငယ် ရွှေ့ခြင်း */
+.submit-div {
+    margin-left: 60px;
+    margin-top: 5px;
+}

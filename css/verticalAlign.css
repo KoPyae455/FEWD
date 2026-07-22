@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr th,
+table tr td {
+    border: 1px solid rgb(4, 235, 77);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.mid {
+    vertical-align: middle;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+figure {
+    text-align: center;
+    width: fit-content;
+    height: 50rem;
+    background-color: rgb(4, 235, 77);
+}
+
+img {
+    vertical-align: top;
+    
+}
+
+span{
+    vertical-align: middle;
+}

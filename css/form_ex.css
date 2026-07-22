@@ -1,0 +1,79 @@
+/* တစ်မျက်နှာလုံး အပြင်အဆင် */
+body {
+    background-color: #7B8DFF;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    width: 800px;
+    
+    background-image: url('../uploads/giphy.gif'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    border: 2px solid yellow;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.6);
+    border-radius: 5px;
+    
+    padding: 30px 50px;
+    color: #1A3C8B;
+    font-weight: bold;
+}
+
+
+h2 {
+    color: #000066;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 400px; 
+    padding: 8px 10px;
+    border: 2px solid #283593;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+label {
+    display: inline-block;
+    width: 180px; 
+    vertical-align: top;
+}
+
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    width: auto;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.btn {
+    background-color: #3F51B5;
+    color: white;
+    border: 1px solid #1A237E;
+    padding: 8px 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #283593;
+}

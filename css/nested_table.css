@@ -1,0 +1,53 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* class selectors */
+.parent,.child {
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+}
+
+/* descendant selectors (all child elements) */
+.parent th, .parent td, .child th, .child td {
+    border: 3px solid rgb(38, 233, 31);
+}
+
+.parent td{
+    padding: 5px 3px;
+    /* top_bottom left_right */
+    /* ၂ ခု ထား ရင် အပေါ်အောက် ဘယ်ညာ */
+    /* px တန်ဖိုး တစ်ခုတည်း ထည့်ရင် အကုန်လုံးကိုသက်ရောက်တယ် */
+}
+
+thead th {
+    padding: 5px;
+    color: rgb(223, 16, 16);
+    font-family: cursive;
+}
+
+/* element name selectors */
+thead {
+    background-color: rgb(6, 153, 221);
+    padding: 5px;
+
+}
+tbody {
+    background-color: rgb(130, 130, 227);
+}
+tfoot {
+    background-color: rgb(3, 47, 3);
+}
+/* id selector */
+#nested-table {
+    background-color: rgb(223, 16, 16);
+}
+#footcell{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding-left: 20px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="../css/simple_portfolio.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Simple portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#Achievement">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Floating images layer (decorative) -->
+    <div class="floating-container" aria-hidden="true">
+        <img class="float-img float1" src="../uploads/view1.jpg" alt="" />
+        <img class="float-img float2" src="../uploads/view2.jpg" alt="" />
+        <img class="float-img float3" src="../uploads/view3.jpg" alt="" />
+        <img class="float-img float4" src="../uploads/view4.jpg" alt="" />
+        <img class="float-img float5" src="../uploads/panda.jpg" alt="" />
+    </div>
+    <section class="aboutme">
+        <!-- <h1>My Portfolio</h1> -->
+        <div class="portfolio">
+            <div>
+                <img src="../uploads/view1.jpg" alt="Portfolio view 1">
+                <span>Simple portfolio</span>
+            </div>
+            <div>
+                <img src="../uploads/view2.jpg" alt="About me view">
+                <span>AboutMe</span>
+            </div>
+            <div>
+                <img src="../uploads/view3.jpg" alt="Projects view">
+                <span>Projects</span>
+            </div>
+            <div>
+                <img src="../uploads/view4.jpg" alt="Achievement view">
+                <span>Achievement</span>
+            </div>
+        </div>
+        <hr>
+        <h2 id="aboutme">AboutMe</h2>
+        <hr class="title-line">
+        <div class="aboutme-container">
+            <div class="image1">
+                <figure>
+                    <img src="../uploads/view2.jpg" alt="About me image">
+                </figure>
+            </div>
+            <div class="paragraph">
+                <p>
+                    Thanks for your interest, here is a quick stoy of me and this website.
+                    <br><br>
+                    Sandeep Jain An IIT Roorkee alumns and founder of GeeksforGeeks. He loves to solve programming
+                    problems in
+                    most
+                    efficient ways. Apart form GeeksforGeeks, he has worked with DE shaw and Co. as a software
+                    developer and JIIT Noida as an assistant professor.
+                    <br><br>
+                    I do my work mainly in C-Language, C++ and JAVA. C++ and Data Structure & Algorithm
+                    are my stronger section. Besides these I Know Web Development, LINUX and database as well.
+                    <br><br>
+                    This website is basically one of my Web Development porject which is built using
+                    HTML only. Here one can also find ideas for projects in different languages. Thanks again for
+                    reading ths, because of people like you, it exists and prospers!
+                    <br><br><br>
+                    Cheers,
+                    <br>
+                    Simple porfolio.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <h1><u>Project</u></h1>
+        <div class="project-container">
+            <div class="list">
+                <ul>
+                    <li>BMI Calculator <span>&darr;</span></li>
+                    <li>Calculator<span>&darr;</span></li>
+                    <li>Calender<span>&darr;</span></li>
+                    <li>ChatBot<span>&darr;</span></li>
+                    <li>Contact Saver<span>&darr;</span></li>
+                    <li>Daily Quiz<span>&darr;</span></li>
+                    <li>Employee Record System<span>&darr;</span></li>
+                    <li>Guess the Number-Game<span>&darr;</span></li>
+                    <li>Random Password Generator<span>&darr;</span></li>
+                    <li>Stone Paper Scissor<span>&darr;</span></li>
+                    <li>Tic Tac Tone<span>&darr;</span></li>
+                    <li>Tic Tac Tone(GUI)<span>&darr;</span></li>
+                    <li>ToDo App<span>&darr;</span></li>
+                    <li>Travel Management System<span>&darr;</span></li>
+                </ul>
+            </div>
+            <div class="image2">
+                <figure>
+                    <img src="../uploads/view3.jpg" alt="Projects image">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="Achievement" id="Achievement">
+        <br>
+        <h2>Achievement</h2>
+        <hr class="title-line">
+        <div class="Achievement-container">
+            <ul>
+                <li>Intern at GeeksforGeeks.
+                    <ul>
+                        <li>December, 2020-Present</li>
+                        <li>Wtitr technical atricles on programming related topics</li>
+                    </ul>
+                </li>
+                <li>Microscoft Learn Ambassador.
+                    <ul>
+                        <li>August, 2020-Present</li>
+                        <li>Conducted events and workshops on different technologics</li>
+                    </ul>
+                </li>
+                <li>Mentored HackTX
+                    <ul>
+                        <li>October, 2020</li>
+                        <li>Selected form Microscoft as Student Ambassador where I mentored students in their projects.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="form-container">
+        <h1 id="contact">Contact</h1>
+        <form action="#" method="post">
+            <label for="nameInput">Name</label>
+            <input type="text" name="name" id="nameInput" placeholder="Enter Your Name" required>
+            <br>
+            <label for="mailInput">Email</label>
+            <input type="email" id="mailInput" name="mail" placeholder="example@gmail.com" required>
+            <br>
+            <label for="phInput">Phone Number</label>
+            <input type="number" name="phno" id="phInput" placeholder="Enter Your Phone No" required>
+            <br>
+            <label for="suggestionInput">Message</label>
+            <textarea name="Message" id="suggestionInput"></textarea>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-ul">
+            <ul>
+                <li><a href="#">LinkedIn<span>&loz;</span></a></li>
+                <li><a href="#">GitHub</a><span >&loz;</span></li>
+                <li><a href="#">HackerRank</a><span>&loz;</span></li>
+                <li><a href="#">Portfolio</a><span>&loz;</span></li>
+                <li><a href="#">Twitter</a><span>&loz;</span></li>
+                <li><a href="#">Instagram</a><span>&loz;</span></li>
+                <li><a href="#">Email</a><span>&loz;</span></li>
+                <li><a href="">Site</a><span>&loz;</span></li>
+            </ul>
+        </div>
+        <div class="footer-p">
+            <p>&copy; Copyright 2050 by nobody. All rights reserved.</p>
+            <a href="#top">Top &#9757;</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

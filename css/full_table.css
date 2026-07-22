@@ -1,0 +1,150 @@
+/* အခြေခံ အပြင်အဆင် */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* ပုံထဲကလို ခပ်မွဲမွဲ နောက်ခံ */
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* ဇယားအားလုံးအတွက် ဘုံစတိုင်လ် */
+table {
+    margin: 0 auto 40px auto; /* ဇယားများကို အလယ်ပို့ရန်နှင့် ကြားအကွာအဝေးထားရန် */
+    border-collapse: collapse;
+}
+
+/* ------------------------------------------- */
+/* ဇယား ၁ (Medical Table) စတိုင်လ် */
+/* ------------------------------------------- */
+.medical-table {
+    background-color: #1a4a5e; /* အပြာရင့်ရောင် နောက်ခံ */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.medical-table th, .medical-table td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.medical-table th {
+    text-transform: uppercase;
+}
+
+.medical-table .label-col {
+    text-transform: uppercase;
+}
+
+.medical-table .text-input {
+    width: 150px;
+    height: 18px;
+    border: none;
+}
+
+.medical-table .center-chk {
+    text-align: center;
+}
+
+.medical-table .bottom-headers td {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* ------------------------------------------- */
+/* ဇယား ၂ (Order Table) စတိုင်လ် */
+/* ------------------------------------------- */
+.order-table {
+    width: 600px;
+    background-color: #e9eaec;
+    border: 1px solid #aeb5b8;
+    font-size: 13px;
+}
+
+.order-table th {
+    background-color: #1a4a5e;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.order-table td {
+    padding: 12px 10px;
+    border: 1px solid #aeb5b8;
+}
+
+.order-table .author {
+    color: #666;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/* ------------------------------------------- */
+/* ဇယား ၃ (Grocery Table) စတိုင်လ် */
+/* ------------------------------------------- */
+.grocery-table {
+    width: 350px;
+    background-color: #e9eaec;
+    border: 1px solid #aeb5b8;
+    font-size: 13px;
+}
+
+.grocery-table th {
+    background-color: #1a4a5e;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.grocery-table td {
+    padding: 12px 10px;
+    border: 1px solid #aeb5b8;
+}
+
+/* ------------------------------------------- */
+/* ဘုံသုံး Helper Classes */
+/* ------------------------------------------- */
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.totals-row td {
+    border-top: 2px solid #aeb5b8;
+}
+
+/* ဇယားနှစ်ခုလုံးရဲ့ စုံဂဏန်းကျတဲ့ အတန်း (Row 2, 4, ...) တွေကို မီးခိုးနုရောင် ထည့်ခြင်း */
+.order-table tbody tr:nth-child(even),
+.grocery-table tbody tr:nth-child(even) {
+    background-color: #b6a8a8; 
+}
+
+/* Order Table မှာ Subtotal (Row 5) နဲ့ Tax (Row 6) က အဖြူရောင် ဖြစ်နေလို့
+  Zebra အရောင်ဝင်မသွားအောင် အဖြူရောင် ပြန်သတ်မှတ်ခြင်း 
+*/
+.order-table tbody tr:nth-child(5),
+.order-table tbody tr:nth-child(6) {
+    background-color: #ffffff;
+}
+
+/* ဇယားနှစ်ခုလုံးရဲ့ အောက်ဆုံးက Total အတန်း (last-child) ကို မီးခိုးရောင် နောက်ခံထည့်ခြင်း */
+.order-table tbody tr:last-child,
+.grocery-table tbody tr:last-child {
+    background-color: #b6a8a8; /* အနည်းငယ် ပိုရင့်သော မီးခိုးရောင် */
+}
+
+/* အပေါ်ကခေါင်းစဉ်အပြာရောင်နဲ့ အောက်က Body ကို မျဉ်းလေးတွေ သေချာကွဲသွားအောင် Border အနည်းငယ် ညှိခြင်း */
+.order-table tbody tr, 
+.grocery-table tbody tr {
+    border-bottom: 1px solid #d3d3d3;
+}
