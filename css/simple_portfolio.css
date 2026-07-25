@@ -255,10 +255,12 @@ footer ul li span{
     width: 8rem;
     height: 8rem;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 50%;
     opacity: 0;
     transform-origin: center;
     filter: drop-shadow(0 6px 14px rgba(10,10,10,0.25));
+    border: 3px solid rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.03);
     animation-name: floatUp;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -283,7 +285,4 @@ footer ul li span{
 .float4{ left: 60%; animation-duration: 18s; animation-delay: 1s; width:5.5rem; height:5.5rem; }
 .float5{ left: 80%; animation-duration: 13s; animation-delay: 3s; width:9rem; height:9rem; }
 
-/* Reduce motion for users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce){
-    .float-img{ animation: none; opacity: 1; bottom: 2rem; }
-}
+
