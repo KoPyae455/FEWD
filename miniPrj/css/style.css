@@ -7,19 +7,19 @@
     box-sizing: border-box;
 }
 body{
-    color: #444;
+    color: #f6f2f5;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
 }
 .current{
-    color: rgb(2, 90, 119);
-    text-shadow: 0.1rem 0.1rem lightskyblue;/* right bottom color */
+    color: #ff8364;
+    text-shadow: none;
 }
 header{
-    background: linear-gradient(to bottom right,rgb(51, 148, 175),rgb(61, 195, 110),rgb(168, 207, 51));
+    background: linear-gradient(to bottom right, #100912, #2f1c34, #5c3a5f);
 }
 .head{
-    background: linear-gradient(to bottom left,rgb(56, 143, 100),rgb(61, 195, 110),rgb(122, 172, 36));
+    background: linear-gradient(to bottom left, #20122a, #4f3157, #7b5f7f);
     padding: 2rem;
     text-align: center;
 }
@@ -28,7 +28,7 @@ header{
 }
 section{
     padding: 2rem;
-    background: linear-gradient(to left,rgb(61,195,110),rgb(122, 172, 36));
+    background: linear-gradient(to left, #2b1834, #5c3e65);
 }
 
 .Skills-section ul li{
@@ -43,12 +43,12 @@ section{
 }
 .porfolio-item{
     text-align: center;
-    background-color: rgb(39, 144, 104);
+    background-color: #1c1220;
 }
 .porfolio-item img{
     max-width: 100%;
     height: 20rem;
-    border: 0.3rem solid rgba(53, 140, 38, 0.853);
+    border: 0.3rem solid rgba(255, 131, 100, 0.32);
     border-radius: 1rem;
 }
 /*  style for floating objects */
@@ -58,7 +58,7 @@ section{
 }
 .floating span{
     display: block;
-    border: 0.1rem solid rgb(15, 225, 18);
+    border: 0.1rem solid rgba(255, 131, 100, 0.35);
     border-radius: 50%;
     opacity: .5;
     position: absolute;
@@ -68,35 +68,35 @@ section{
 .floating span:nth-child(1){
     width: 5%;
     height: 5rem;
-    background-color: aquamarine;
+    background-color: #ff8364;
     left: 1%;
     animation-duration: 10s;
 }
 .floating span:nth-child(2){
     width: 7%;
     height: 7rem;
-    background-color: rgb(12, 106, 75);
+    background-color: #8f4c72;
     left: 7%;
     animation-duration: 5s;
 }
 .floating span:nth-child(3){
     width: 9%;
     height: 9rem;
-    background-color: rgb(57, 142, 228);
+    background-color: #c97a5b;
     left: 15%;
     animation-duration: 10s;
 }
 .floating span:nth-child(4){
     width: 12%;
     height: 12rem;
-    background-color: rgb(7, 207, 222);
+    background-color: #6e3d5d;
     left: 30%;
     animation-duration: 7s;
 }
 .floating span:nth-child(5){
     width: 15%;
     height: 15rem;
-    background-color: aquamarine;
+    background-color: #e3b692;
     left: 50%;
     animation-duration: 10s;
 }
@@ -110,7 +110,7 @@ section{
 }
 
 footer{
-    background: linear-gradient(to right bottom,rgb(68, 162, 115),rgb(141, 177, 50));
+    background: linear-gradient(to right bottom, #120a1b, #411f40);
     height: 7rem;
     text-align: center;
     padding: 3rem 0rem;/* top+bottom left+right */

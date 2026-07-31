@@ -6,12 +6,11 @@ header{
     flex-wrap: wrap;
 }
 body {
-    background: linear-gradient(to bottom left, rgb(56, 143, 100), rgb(61, 195, 110), rgb(122, 172, 36));
+    background: linear-gradient(to bottom left, #11131a, #24192f, #402b45);
     min-height: 100vh;
     margin: 0;
     padding: 0;
-}
-header img{
+}header img{
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -22,7 +21,7 @@ header nav ul li>a{
     text-decoration: none;
     font: bold 1.5rem 'Story Script';
     color: white;
-    text-shadow: 0.1rem 0.1rem rgb(21, 121, 91);
+    text-shadow: 0.1rem 0.1rem rgba(125, 211, 252, 0.45);
 }
 header nav ul li{
     width: 10rem;
@@ -37,7 +36,7 @@ header nav ul{
 }
 /* psecudo class selector */
 header nav ul li:hover a{
-    color: rgb(59, 146, 88);
+    color: #7dd3fc;
 }
 
 .searchDiv{
@@ -54,13 +53,13 @@ header nav ul li:hover a{
     padding: 0.5rem;
     border: none;
     border-radius: 0rem 1rem 1rem 0rem;
-    color: rgb(74, 117, 47);
+    color: #e7eef8;
     cursor: pointer;
 }
 .searchDiv input:focus{
-    border: 0.1rem solid rgb(7, 159, 12);
+    border: 0.1rem solid #38bdf8;
     outline: none;
-    box-shadow: 0rem 0rem 1rem rgb(213, 227, 27);
+    box-shadow: 0rem 0rem 1rem rgba(56, 189, 248, 0.35);
     padding-left: 1rem;
 }
 /* style for slideshow with css only */
@@ -110,7 +109,7 @@ header nav ul li:hover a{
     color: white;
     font: bold 2rem Cursive;
     transform: translate(-50%,-50%);
-    text-shadow: 0.2rem 0.2rem 0.5rem darkgreen;
+    text-shadow: 0.2rem 0.2rem 0.5rem rgba(125, 211, 252, 0.38);
     animation: text-animation 5s infinite;
 }
 @keyframes text-animation {
@@ -133,7 +132,7 @@ header nav ul li:hover a{
 }
 .grid-container .grid-item{
     position: relative;
-    background: linear-gradient(to bottom,rgb(17, 108, 138),rgb(36, 108, 51));
+    background: linear-gradient(to bottom, #0b2038, #102d52);
     padding: 1rem;
     text-align: center;
     border-radius: 2rem;

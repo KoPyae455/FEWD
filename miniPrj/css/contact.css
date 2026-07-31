@@ -5,15 +5,15 @@
 
 }
 .contact>h1{
-    color: rgb(71, 89, 54);
-    text-shadow: 0.1rem 0.2rem rgb(79, 124, 37);
+    color: #f6f2f5;
+    text-shadow: none;
 }
 .contact-container{
-    background-color: rgb(27, 187, 153);
+    background-color: #402b45;
     padding: 3rem;
     border-radius: 3rem;
     opacity: 95%;
-    box-shadow: 0rem 0.1rem 0.1rem rgb(107, 105, 47);
+    box-shadow: 0rem 0.1rem 0.1rem rgba(255, 131, 100, 0.25);
     /* display: grid; */
     /* grid-template-columns: 1fr 1fr; */
     /* grid-template-columns: repeat(2.1fr); */
@@ -27,15 +27,15 @@
     float: right;
 }
 .contact-info h2,.contact-info p{
-    color: rgb(9, 91, 2);
+    color: #f6f2f5;
     margin: 1rem;
 }
 .info i,.info span{
-    color: rgb(190, 218, 8);
+    color: #ff8364;
 }
 .social a{
     color: white;
-    background-color: rgb(0, 117, 33);
+    background-color: #ff8364;
     width: 2rem;
     height: 2rem;
     display: inline-block;
@@ -43,7 +43,7 @@
     margin: 1rem;
 }
 .social a:hover{
-    background-color: rgb(107, 111, 41);
+    background-color: #d46a54;
 }
 .contact-form{
     text-align: left;
@@ -56,27 +56,27 @@
     margin-bottom: 1rem;
 }
 .contact-form label{
-    color: rgb(19, 95, 10);
+    color: #f6f2f5;
     font: bold 1.2rem Cursive;
 }
 .contact-form input,.contact-form textarea{
-    border: 0.2rem solid olive;
+    border: 0.2rem solid #7b5f7f;
     border-radius: 0.5rem;
 }
 .contact-form input,.contact-form textarea:focus{
-    border: 0.2rem solid olive;
+    border: 0.2rem solid #ff8364;
 
 }
 .contact-form input[type="submit"]{
-    background-color: cadetblue;
-    color: rgb(9, 82, 6);
+    background-color: #ff8364;
+    color: #f6f2f5;
     font: bold 1rem  Cursive;
     height: fit-content;
     text-align: center;
     line-height: 3-x;
 }
 .contact-form input[type="submit"]:hover{
-    background-color: rgb(54, 119, 27);
+    background-color: #d46a54;
 }
 .map{
     margin: 3rem 15%;
