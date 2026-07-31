@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Kapakana|Story+Script&effect=fire|neon|outline|emboss|shadow-multiple');
+@import url(./home.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+.current{
+    color: rgb(2, 90, 119);
+    text-shadow: 0.1rem 0.1rem lightskyblue;/* right bottom color */
+}
+header{
+    background: linear-gradient(to bottom right,rgb(51, 148, 175),rgb(61, 195, 110),rgb(168, 207, 51));
+}
+.head{
+    background: linear-gradient(to bottom left,rgb(56, 143, 100),rgb(61, 195, 110),rgb(122, 172, 36));
+    padding: 2rem;
+    text-align: center;
+}
+.head>img{
+    border-radius: 50%;
+}
+section{
+    padding: 2rem;
+    background: linear-gradient(to left,rgb(61,195,110),rgb(122, 172, 36));
+}
+
+.Skills-section ul li{
+    /* list-style-type: none; */
+    list-style-image: url(../resources/list_icon.png);
+    padding: 1rem;
+}
+.porfolio-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.porfolio-item{
+    text-align: center;
+    background-color: rgb(39, 144, 104);
+}
+.porfolio-item img{
+    max-width: 100%;
+    height: 20rem;
+    border: 0.3rem solid rgba(53, 140, 38, 0.853);
+    border-radius: 1rem;
+}
+/*  style for floating objects */
+.floating{
+    height: 30rem;
+    overflow: hidden;
+}
+.floating span{
+    display: block;
+    border: 0.1rem solid rgb(15, 225, 18);
+    border-radius: 50%;
+    opacity: .5;
+    position: absolute;
+    animation: float-object 10s linear infinite;
+}
+
+.floating span:nth-child(1){
+    width: 5%;
+    height: 5rem;
+    background-color: aquamarine;
+    left: 1%;
+    animation-duration: 10s;
+}
+.floating span:nth-child(2){
+    width: 7%;
+    height: 7rem;
+    background-color: rgb(12, 106, 75);
+    left: 7%;
+    animation-duration: 5s;
+}
+.floating span:nth-child(3){
+    width: 9%;
+    height: 9rem;
+    background-color: rgb(57, 142, 228);
+    left: 15%;
+    animation-duration: 10s;
+}
+.floating span:nth-child(4){
+    width: 12%;
+    height: 12rem;
+    background-color: rgb(7, 207, 222);
+    left: 30%;
+    animation-duration: 7s;
+}
+.floating span:nth-child(5){
+    width: 15%;
+    height: 15rem;
+    background-color: aquamarine;
+    left: 50%;
+    animation-duration: 10s;
+}
+@keyframes float-object {
+    0%{
+        transform: translateY(110vh) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-13rem) rotate(360deg);
+    }
+}
+
+footer{
+    background: linear-gradient(to right bottom,rgb(68, 162, 115),rgb(141, 177, 50));
+    height: 7rem;
+    text-align: center;
+    padding: 3rem 0rem;/* top+bottom left+right */
+}
+h2{
+    font-family: 'Story Script';
+}
+footer p a{
+    font-family: Kapakana;
+    font-size: 2rem;
+}
+/* style for tablet responsive */
+@media (max-width: 991px) {
+    .floating span:nth-child(1){
+        width: 0.1rem; }
+    .floating span:nth-child(2){
+        width: 3rem; }
+    .floating span:nth-child(3){
+        width: 4rem; }
+    .floating span:nth-child(4){
+        width: 5rem; }
+    .floating span:nth-child(5){
+        width: 6rem; }
+}
+
+/* Mobile Device */
+@media (max-width: 767px){
+    .porfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .porfolio-item {
+        width: 80%;
+    }
+    .floating {
+        height: 10rem;
+    }
+    .floating span:nth-child(1){
+        width: 2rem;
+        height: 2rem;
+        }
+    .floating span:nth-child(2){
+        width: 4em;
+        height: 4rem;
+        }
+    .floating span:nth-child(3){
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .floating span:nth-child(4){
+        width: 5rem;
+        height: 5rem;
+    }
+    .floating span:nth-child(5){
+        width: 7rem;
+        height: 7rem;
+    }
+}

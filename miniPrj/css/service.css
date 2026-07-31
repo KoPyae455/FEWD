@@ -1,0 +1,206 @@
+@import url(./style.css);
+
+body{
+    background-color: rgb(56, 143, 100);
+}
+.services{
+    width: 90%;
+    margin: 5rem auto;
+    border-radius: 3rem;
+}
+.services h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.services figure{
+    width: 50%;
+    text-align: center;
+    border-color: rgb(50, 202, 8);
+    float: left;
+}
+.services figure>img{
+    width: 80%;
+    height: 16rem;
+    margin: 1rem 10% 0rem;
+}
+.services>p{
+    width: 48%;
+    padding: 2%;
+    text-align: justify;
+    color: rgb(13, 83, 26);
+    margin-bottom: 1rem;
+    float: right;
+}
+.service-container{
+    clear: both;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(2rem,1fr)); */
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.card{
+    background: linear-gradient(to top right,rgb(78, 161, 15),rgb(19, 164, 186));
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.5rem 1.2rem rgb(181, 152, 7);
+}
+.card:hover{
+    transform: translateY(-1rem);
+}
+.card i,.card h2,.card p{
+    color: white;
+}
+.card i{
+    font-size: 3rem;
+    margin: 1.5rem 15rem;
+}
+.card h2{
+    text-align: center;
+}
+.card p{
+    line-height: 1.5;
+    text-align: justify;
+}
+ /* style for mobile device responsive */
+@import url(./style.css);
+
+body {
+    background-color: rgb(56, 143, 100);
+}
+
+.services {
+    width: 90%;
+    margin: 5rem auto;
+    border-radius: 3rem;
+}
+
+.services h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.services figure {
+    width: 50%;
+    text-align: center;
+    border-color: rgb(50, 202, 8);
+    float: left;
+}
+
+.services figure > img {
+    width: 80%;
+    height: 16rem;
+    margin: 1rem 10% 0rem;
+    object-fit: cover;
+}
+
+.services > p {
+    width: 48%;
+    padding: 2%;
+    text-align: justify;
+    color: rgb(13, 83, 26);
+    margin-bottom: 1rem;
+    float: right;
+}
+
+.service-container {
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+}
+
+.card {
+    background: linear-gradient(to top right, rgb(78, 161, 15), rgb(19, 164, 186));
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.5rem 1.2rem rgb(181, 152, 7);
+    text-align: center; /* Content များကို အလယ်ညှိပေးသည် */
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card i, .card h2, .card p {
+    color: white;
+}
+
+.card i {
+    font-size: 3rem;
+    margin: 0 auto 1rem auto; /* Desktop မှာပါ Icon ကို အလယ်ရောက်အောင် ပြင်ထားပါသည် */
+    display: block;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* style for mobile device responsive */
+@media(min-width:320px) and (max-width:767px){
+    .services figure {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .services figure>img{
+        display: block;
+        width: 100%;
+        margin: 1rem auto 0 auto;  
+    }
+    .services p{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    .service-container{
+        width: 100%;
+        margin-left:.1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+    .card i{
+        margin: 0 auto 0.8rem auto;
+        display: block;
+        font-size: 1.5rem;
+    }
+}
+/* style for tablet device responsive */
+@media(min-width:768px) and (max-width:991px){
+    .services figure {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .services figure>img{
+        display: block;
+        width: 80%;
+        margin: 2rem auto 0 auto;
+       
+    }
+    .services p{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    .service-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+       
+    }
+    .card i{
+        margin: 0 auto 1rem auto;
+        display: block;
+    }
+}
