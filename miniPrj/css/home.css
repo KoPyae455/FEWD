@@ -152,7 +152,7 @@ header nav ul li:hover a{
     bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 41%;
+    width: 62%;
     height: 0;
     opacity: 0;
     object-fit: cover;
@@ -162,7 +162,7 @@ header nav ul li:hover a{
 .grid-container .grid-item:nth-child(5):hover .second,
 .grid-container .grid-item:nth-child(6):hover .second {
     opacity: 70%;
-    height: 81%;
+    height: 89%;
 }
 
 .grid-container .grid-item:nth-child(7):hover img {
