@@ -1,75 +1,57 @@
 // script for register form validation
 function validateRegForm() {
-    var form = document.forms["myRegForm"];
-    var name = form["nameInput"].value.trim();
-    var email = form["emailInput"].value.trim();
-    var dob = form["dobInput"].value;
-    var password = form["passwordInput"].value;
-    var confirmPassword = form["confirmPasswordInput"].value;
-    var errorEl = document.getElementById("error");
-    var errors = [];
-    var invalidFields = [];
+    var email = document.forms["myRegForm"]["emailInput"].value;
+    var password = document.forms["myRegForm"]["passwordInput"].value;
+    var confirmPassword = document.forms["myRegForm"]["confirmPasswordInput"].value;
+    var dob = document.forms["myRegForm"]["dobInput"].value;
+    // validation for date disabled for now
 
+    var today = new Date().toISOString().split('T')[0];
+
+    // regular expression for password validation: minimum eight characters, at least one letter and one number
+    var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,12}$/;
+
+    // to display error message in the form instead of alert
+    let error = "";
+    var errorEl = document.getElementById("error");
     errorEl.innerHTML = "";
     errorEl.classList.remove("visible");
 
-    var today = new Date().toISOString().split('T')[0];
-    var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,12}$/;
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    function markInvalid(fieldId) {
-        document.getElementById(fieldId).classList.add("input-error");
-        invalidFields.push(fieldId);
+    if (email == null || email == "") {
+        // alert("Email must be filled out");
+        error += "Email must be filled out.<br>";
     }
-
-    function clearInvalid() {
-        invalidFields.forEach(function(fieldId) {
-            document.getElementById(fieldId).classList.remove("input-error");
-        });
-        invalidFields = [];
+    if (dob > today) {
+        // alert("Date of Birth cannot be in the future");
+        error += "Date of Birth cannot be in the future.<br>";
+        document.getElementById("dob").setAttribute("max", today);
     }
-
-    clearInvalid();
-
-    if (!name) {
-        errors.push("Name is required.");
-        markInvalid("name");
-    }
-
-    if (!email) {
-        errors.push("Email must be filled out.");
-        markInvalid("email");
-    } else if (!emailPattern.test(email)) {
-        errors.push("Please enter a valid email address.");
-        markInvalid("email");
-    }
-
-    if (!dob) {
-        errors.push("Date of Birth must be selected.");
-        markInvalid("dob");
-    } else if (dob > today) {
-        errors.push("Date of Birth cannot be in the future.");
-        markInvalid("dob");
-    }
-
     if (!passwordRegex.test(password)) {
-        errors.push("Password must be 8-12 characters and include letters and numbers.");
-        markInvalid("psw1");
+        error += "Password must be at least 8 characters long and contain at least one letter and one number.<br>";
     }
-
     if (password !== confirmPassword) {
-        errors.push("Passwords do not match.");
-        markInvalid("psw1");
-        markInvalid("psw2");
+        error += "Passwords do not match.<br>";
     }
-
-    if (errors.length > 0) {
-        errorEl.innerHTML = errors.map(function(msg) {
-            return '<div>' + msg + '</div>';
-        }).join('');
+    if (error !== "") {
+        errorEl.innerHTML = error;
         errorEl.classList.add("visible");
         return false;
     }
 
     return true;
+}
+
+// minimal show/hide helper so the existing button works
+function showHideForm() {
+    var form = document.forms["myRegForm"];
+    var toggleBtn = document.getElementById("togBtn");
+    if (!form) return;
+    // toggle visibility
+    if (form.style.display === "none") {
+        form.style.display = "";
+        if (toggleBtn) toggleBtn.innerHTML = "Hide Form";
+    } else {
+        form.style.display = "none";
+        if (toggleBtn) toggleBtn.innerHTML = "Show Form";
+    }
 }

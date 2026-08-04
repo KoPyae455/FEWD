@@ -10,28 +10,32 @@
 </head>
 <body>
     <h1>JS form validation with Javascript</h1>
+
+    <button type="button" id="togBtn" onclick="showHideForm()">Hide Form</button>
+
     <fieldset>
         <legend>Registration Form</legend>
         <form action="https://www.youtube.com/" method="post" name="myRegForm" onsubmit="return validateRegForm()">
             <div>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="nameInput" placeholder="Enter your name" required>
+                <input type="text" id="name" name="nameInput" placeholder="Enter your name" >
+                
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="emailInput" placeholder="Enter your email" required>
+                <input type="email" id="email" name="emailInput" placeholder="Enter your email" >
             </div>
             <div>
                 <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dobInput" required>
+                <input type="date" id="dob" name="dobInput" >
             </div>
             <div>
                 <label for="psw1">Password:</label>
-                <input type="password" id="psw1" name="passwordInput" placeholder="Enter your password" required>
+                <input type="password" id="psw1" name="passwordInput" placeholder="Enter your password" >
             </div>
             <div>
                 <label for="psw2">Confirm Password:</label>
-                <input type="password" id="psw2" name="confirmPasswordInput" placeholder="Confirm your password" required>
+                <input type="password" id="psw2" name="confirmPasswordInput" placeholder="Confirm your password" >
             </div>
             <div id="error"></div>
             <button type="submit">Register</button>
