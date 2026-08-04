@@ -1,0 +1,9 @@
+#example{
+    background-color: lightblue;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font: bold 20px Arial;
+}

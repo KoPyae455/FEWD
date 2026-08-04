@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS form validation</title>
+    <link rel="stylesheet" href="../css/form_js.css">
+    <!-- external js -->
+    <script src="../js/form_js.js"></script>
+</head>
+<body>
+    <h1>JS form validation with Javascript</h1>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form action="https://www.youtube.com/" method="post" name="myRegForm" onsubmit="return validateRegForm()">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="nameInput" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="emailInput" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dobInput" required>
+            </div>
+            <div>
+                <label for="psw1">Password:</label>
+                <input type="password" id="psw1" name="passwordInput" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <label for="psw2">Confirm Password:</label>
+                <input type="password" id="psw2" name="confirmPasswordInput" placeholder="Confirm your password" required>
+            </div>
+            <div id="error"></div>
+            <button type="submit">Register</button>
+        </form>
+
+    </fieldset>
+
+</body>
+</html>
